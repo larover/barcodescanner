@@ -9,6 +9,18 @@ ext {
 }
 
 dependencies {
-    compile project(":core")
-    compile 'com.google.android.gms:play-services-vision:10.2.1'
+    //dm7 latest example
+    //    api project(":core")
+//    api libraries.barcodescanner_core
+//    api fileTree(dir: 'libs', include: '*.jar')
+
+    //tonytang original
+//    compile project(":core")
+//    compile 'com.google.android.gms:play-services-vision:10.2.1'
+
+    //new
+    api libraries.barcodescanner_core
+//    implementation 'com.google.android.gms:play-services-vision:17.0.2'
+    api libraries.barcodescanner_vision
+
 }
